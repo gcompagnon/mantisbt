@@ -206,7 +206,7 @@ if ( ON == config_get( 'time_tracking_with_billing' ) ) {
 				$t_prev_id = $t_item['bug_id'];
 			}
 ?>
-	<tr <?php echo helper_alternate_class() ?>>
+	<tr>
 		<td class="small-caption">
 			<?php echo $t_item[$t_name_field] ?>
 		</td>
@@ -222,7 +222,7 @@ if ( ON == config_get( 'time_tracking_with_billing' ) ) {
 
 <?php	} # end for loop ?>
 
-	<tr <?php echo helper_alternate_class() ?>>
+	<tr>
 		<td class="small-caption">
 			<?php echo lang_get( 'total_time' ); ?>
 		</td>
@@ -258,7 +258,7 @@ if ( ON == config_get( 'time_tracking_with_billing' ) ) {
 <?php
 	foreach ( $t_user_summary as $t_username => $t_total_time ) {
 ?>
-	<tr <?php echo helper_alternate_class() ?>>
+	<tr>
 		<td class="small-caption">
 			<?php echo $t_username; ?>
 		</td>
@@ -272,7 +272,7 @@ if ( ON == config_get( 'time_tracking_with_billing' ) ) {
 <?php		} ?>
 	</tr>
 <?php	} ?>
-	<tr <?php echo helper_alternate_class() ?>>
+	<tr>
 		<td class="small-caption">
 			<?php echo lang_get( 'total_time' ); ?>
 		</td>
